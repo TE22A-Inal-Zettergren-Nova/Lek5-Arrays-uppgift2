@@ -25,5 +25,27 @@ public class App {
         tb_fält[2]= tal2;
         tb_fält[3]= tal1;
         System.out.println( tb_fält[0]+" "+ tb_fält[1]+" "+ tb_fält[2]+" "+ tb_fält[3]);
+
+        /*Uppgift b*/
+
+        String[] fält2 = new String[3];
+
+        fält2[0] = "Hej";
+        fält2[1] = "Katt";
+        fält2[2] = "Hund";
+
+        Scanner ord = new Scanner(System.in);
+        System.out.print("Gissa ett ord som jag skrivit: ");
+        String gissning = ord.nextLine();
+        System.out.print("Gissade du ordet Hej? ");
+        System.out.println(fält2[0].equals(gissning));
+        System.out.print("Gissade du ordet Katt? ");
+        System.out.println(fält2[1].equals(gissning));
+        System.out.print("Gissade du ordet Hund? ");
+        System.out.println(fält2[2].equals(gissning));
+        
+        
+
+
     }
 }
